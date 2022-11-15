@@ -10,4 +10,8 @@ struct RollNew {
         roll.append(pin)
     }
     
+    func pinValeAtIndex(index: CurrentRollIndex) -> Pin {
+        return roll[index]
+    }
+    
 }
