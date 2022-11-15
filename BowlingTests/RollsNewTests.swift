@@ -18,4 +18,14 @@ class RollsNewTests: XCTestCase {
         let rollIndex = 0
         XCTAssertTrue(roll.isValidIndex(rollIndex: rollIndex))
     }
+    
+    func test_RollArrayValueAtIndexOneIsTrue_WhenTwoPinValuesAreAppended() {
+        var roll = RollNew()
+        
+        roll.append(pin: .zero)
+        roll.append(pin: .ten)
+        
+        let rollIndex = 1
+        XCTAssertTrue(roll.isValidIndex(rollIndex: rollIndex))
+    }
 }
