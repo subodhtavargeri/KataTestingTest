@@ -49,4 +49,9 @@ class RollsNewTests: XCTestCase {
         let originalValue = roll?.getScoreValueAtIndex(index:0)
         XCTAssertEqual(originalValue, Pin.three.rawValue)
     }
+    
+    func test_ScoreReturnedIsZero_WhenRollArrayDoesNotHaveValueAtIndexProvided() {
+        let originalValue = roll?.getScoreValueAtIndex(index:0)
+        XCTAssertEqual(originalValue, Pin.zero.rawValue)
+    }
 }

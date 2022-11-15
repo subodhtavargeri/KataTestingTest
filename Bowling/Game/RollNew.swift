@@ -15,6 +15,9 @@ struct RollNew {
     }
     
     func getScoreValueAtIndex(index: CurrentRollIndex)-> Score {
-        return roll[index].rawValue
+        if isValidIndex(rollIndex: index) {
+            return roll[index].rawValue
+        }
+        return .zero
     }
 }
