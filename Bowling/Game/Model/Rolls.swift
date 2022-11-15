@@ -9,7 +9,31 @@ protocol RollProtocol {
 }
 
 struct Rolls : RollProtocol {
+    func getRawValue(index: CurrentRollIndex) -> Score {
+        return 0
+    }
     
+    func pinValueAtIndex(index: CurrentRollIndex) -> Pin {
+        return .ten
+    }
+    
+    func isValidIndex(rollIndex: CurrentRollIndex) -> Bool {
+        true
+    }
+    
+    mutating func append(pin: Pin) {
+        
+    }
+    
+    mutating func resetRoll() {
+        
+    }
+    
+    func isBonusForFrame() -> Bonus {
+        .spare
+    }
+    
+    /*
     private var roll = [Pin]()
     
     func getRawValue(index: CurrentRollIndex)-> Score {
@@ -60,4 +84,5 @@ struct Rolls : RollProtocol {
     private func isRollCountMoreThanOne()-> Bool {
         return roll.count > 1
     }
+     */
 }

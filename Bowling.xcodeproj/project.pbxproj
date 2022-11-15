@@ -18,6 +18,8 @@
 		5B490A87291403B1003FEA73 /* RollSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B490A86291403B1003FEA73 /* RollSpy.swift */; };
 		5B803C452914F98500819D26 /* BowlingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B803C442914F98500819D26 /* BowlingRouter.swift */; };
 		5B803C472914FA9800819D26 /* BowlingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B803C462914FA9800819D26 /* BowlingFactory.swift */; };
+		5BA70B2729236EF10092485F /* RollsNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA70B2629236EF10092485F /* RollsNewTests.swift */; };
+		5BA70B29292370AA0092485F /* RollNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA70B28292370AA0092485F /* RollNew.swift */; };
 		5BBAC7CA29123EFA008D793A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBAC7C929123EFA008D793A /* AppDelegate.swift */; };
 		5BBAC7CC29123EFA008D793A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBAC7CB29123EFA008D793A /* SceneDelegate.swift */; };
 		5BBAC7D129123EFA008D793A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBAC7CF29123EFA008D793A /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		5B490A86291403B1003FEA73 /* RollSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollSpy.swift; sourceTree = "<group>"; };
 		5B803C442914F98500819D26 /* BowlingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingRouter.swift; sourceTree = "<group>"; };
 		5B803C462914FA9800819D26 /* BowlingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingFactory.swift; sourceTree = "<group>"; };
+		5BA70B2629236EF10092485F /* RollsNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollsNewTests.swift; sourceTree = "<group>"; };
+		5BA70B28292370AA0092485F /* RollNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollNew.swift; sourceTree = "<group>"; };
 		5BBAC7C629123EFA008D793A /* Bowling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bowling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBAC7C929123EFA008D793A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BBAC7CB29123EFA008D793A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 				5B490A7B2913A9B0003FEA73 /* Spy */,
 				5BBAC7F929124398008D793A /* GameTests.swift */,
 				5B490A772913A7F6003FEA73 /* GamePresenterTests.swift */,
+				5BA70B2629236EF10092485F /* RollsNewTests.swift */,
 			);
 			path = BowlingTests;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				5BA70B23292361EF0092485F /* View */,
 				5BA70B22292361DD0092485F /* Router */,
 				5BA70B25292362410092485F /* Model */,
+				5BA70B28292370AA0092485F /* RollNew.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 				5B490A832913D34B003FEA73 /* BowlingViewController.swift in Sources */,
 				5B803C472914FA9800819D26 /* BowlingFactory.swift in Sources */,
 				5B490A7A2913A86F003FEA73 /* GamePresenter.swift in Sources */,
+				5BA70B29292370AA0092485F /* RollNew.swift in Sources */,
 				5BBAC7FD29124466008D793A /* Game.swift in Sources */,
 				5B490A852913ED12003FEA73 /* Rolls.swift in Sources */,
 				5B490A7F2913C453003FEA73 /* Constant.swift in Sources */,
@@ -359,6 +366,7 @@
 				5B490A782913A7F6003FEA73 /* GamePresenterTests.swift in Sources */,
 				5BBAC7FA29124398008D793A /* GameTests.swift in Sources */,
 				5B490A812913D31E003FEA73 /* BowlingViewControllerSpy.swift in Sources */,
+				5BA70B2729236EF10092485F /* RollsNewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
