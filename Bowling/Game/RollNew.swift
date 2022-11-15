@@ -14,4 +14,7 @@ struct RollNew {
         return roll[index]
     }
     
+    func getScoreValueAtIndex(index: CurrentRollIndex)-> Score {
+        return roll[index].rawValue
+    }
 }

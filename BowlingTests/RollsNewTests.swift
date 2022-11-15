@@ -42,4 +42,11 @@ class RollsNewTests: XCTestCase {
         let originalValue = roll?.pinValeAtIndex(index:0)
         XCTAssertEqual(originalValue, Pin.ten)
     }
+    
+    func test_ScoreReturnedIsThree_WhenRollArrayHasPinThree() {
+        roll?.append(pin: .three)
+        
+        let originalValue = roll?.getScoreValueAtIndex(index:0)
+        XCTAssertEqual(originalValue, Pin.three.rawValue)
+    }
 }
