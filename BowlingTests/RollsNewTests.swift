@@ -54,4 +54,11 @@ class RollsNewTests: XCTestCase {
         let originalValue = roll?.getScoreValueAtIndex(index:0)
         XCTAssertEqual(originalValue, Pin.zero.rawValue)
     }
+    
+    func test_ScoreRetunedIsZero_WhenGameIsReset() {
+        roll?.resetRoll()
+        
+        let originalValue = roll?.getScoreValueAtIndex(index:0)
+        XCTAssertEqual(originalValue, Pin.zero.rawValue)
+    }
 }

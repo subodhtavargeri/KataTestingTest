@@ -20,4 +20,8 @@ struct RollNew {
         }
         return .zero
     }
+    
+    mutating func resetRoll() {
+        roll.removeAll()
+    }
 }
