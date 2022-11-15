@@ -1,0 +1,3 @@
+protocol RouterProtocol {
+    func routeToBowlingController()
+}
