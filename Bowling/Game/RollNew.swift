@@ -1,6 +1,8 @@
 struct RollNew {
     
+    private var roll = [Pin]()
+    
     func isValidIndex(rollIndex: CurrentRollIndex)-> Bool {
-        return true
+        return roll.indices.contains(rollIndex)
     }
 }
