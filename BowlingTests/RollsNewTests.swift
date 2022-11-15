@@ -3,38 +3,43 @@ import XCTest
 
 class RollsNewTests: XCTestCase {
     
+    var roll: RollNew?
+    
+    override func setUp() {
+        roll = RollNew()
+    }
+    
     func test_RollArrayValueAtIndexIsFalse_WhenRollIndexIsZero() {
-        let roll = RollNew()
-        
         let rollIndex = 0
-        XCTAssertFalse(roll.isValidIndex(rollIndex: rollIndex))
+        if let originalValue = roll?.isValidIndex(rollIndex: rollIndex) {
+            XCTAssertFalse(originalValue)
+        }
     }
     
     func test_RollArrayValueAtIndexZeroIsTrue_WhenNewPinValueIsAppendedInRollArray() {
-        var roll = RollNew()
-        
-        roll.append(pin: .zero)
+        roll?.append(pin: .zero)
         
         let rollIndex = 0
-        XCTAssertTrue(roll.isValidIndex(rollIndex: rollIndex))
+        if let originalValue = roll?.isValidIndex(rollIndex: rollIndex) {
+            XCTAssertTrue(originalValue)
+        }
     }
     
     func test_RollArrayValueAtIndexOneIsTrue_WhenTwoPinValuesAreAppendedInRollArray() {
-        var roll = RollNew()
+        roll?.append(pin: .zero)
         
-        roll.append(pin: .zero)
-        roll.append(pin: .ten)
+        roll?.append(pin: .ten)
         
         let rollIndex = 1
-        XCTAssertTrue(roll.isValidIndex(rollIndex: rollIndex))
+        if let originalValue = roll?.isValidIndex(rollIndex: rollIndex) {
+            XCTAssertTrue(originalValue)
+        }
     }
     
     func test_GetValueAsPinTenFromRollArray_WhenRollArrayHasValuePinTenAtIndexZero() {
-        var roll = RollNew()
+        roll?.append(pin: .ten)
         
-        roll.append(pin: .ten)
-        
-        let originalValue = roll.pinValeAtIndex(index:0)
+        let originalValue = roll?.pinValeAtIndex(index:0)
         XCTAssertEqual(originalValue, Pin.ten)
     }
 }
