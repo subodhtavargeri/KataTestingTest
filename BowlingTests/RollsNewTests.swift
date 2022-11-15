@@ -10,7 +10,8 @@ class RollsNewTests: XCTestCase {
         XCTAssertFalse(roll.isValidIndex(rollIndex: rollIndex))
     }
     
-    func test_RollArrayValueAtIndexZeroIsTrue_WhenNewPinValueIsAppended() {
+    func test_RollArrayValueAtIndexZeroIsTrue_WhenNewPinValueIsAppendedInRollArray
+    () {
         var roll = RollNew()
         
         roll.append(pin: .zero)
@@ -19,7 +20,7 @@ class RollsNewTests: XCTestCase {
         XCTAssertTrue(roll.isValidIndex(rollIndex: rollIndex))
     }
     
-    func test_RollArrayValueAtIndexOneIsTrue_WhenTwoPinValuesAreAppended() {
+    func test_RollArrayValueAtIndexOneIsTrue_WhenTwoPinValuesAreAppendedInRollArray() {
         var roll = RollNew()
         
         roll.append(pin: .zero)
